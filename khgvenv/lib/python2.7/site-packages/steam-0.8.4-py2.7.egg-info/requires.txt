@@ -1,0 +1,9 @@
+cryptography>=1.3
+requests>=2.9.1
+vdf>=2.0
+enum34>=1.0.4
+
+[client]
+gevent>=1.1.0
+protobuf>=3.0.0b2
+gevent-eventemitter>=1.4

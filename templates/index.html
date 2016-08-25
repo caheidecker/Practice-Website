@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                    <a class="navbar-brand" href="#">KHGaming</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Members
+            <span class="caret"></span>
+            </a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{ url_for('members', username='mgraham') }}">Mitchell Graham</a></li>
+                    <li><a href="{{ url_for('members', username='cheidecker') }}">Caleb Heidecker</a></li>
+                    <li><a href="{{ url_for('members', username='bkaul') }}">Bhaanu Kaul</a></li>
+                    <li><a href="{{ url_for('members', username='cperry') }}">Cody Perry</a></li>
+                    <li><a href="{{ url_for('members', username='akaul') }}">Aadi Kaul</a></li>
+                </ul>
+
+            </li>
+        </ul>
+    </div>
+</nav>
+
+</body>
+</html>
